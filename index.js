@@ -54,7 +54,7 @@ async function run() {
         // console.log(user);
         const payload = {
           user: {
-            email: user.email,
+            : user.email,
           },
         };
         const token = jwt.sign(payload, process.env.JWT_SECRETE, {
