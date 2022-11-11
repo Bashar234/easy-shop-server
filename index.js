@@ -174,7 +174,7 @@ async function run() {
     app.patch("/api/review/:id", async (req, res) => {
       try {
         const id = req.params.id;
-        const  = { _id: ObjectId(id) };
+        const query = { _id: ObjectId(id) };
         const updatedReview = {
           $set: {
             review: req.body.editReview,
